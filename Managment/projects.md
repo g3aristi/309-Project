@@ -28,7 +28,7 @@ physical resources.
 
 Main Users are:
 * funder
-*project initiator
+* project initiator
 Pros:
 
 
