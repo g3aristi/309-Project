@@ -20,7 +20,8 @@ Pros:
 Cons: 
 * we have to account for more user divercity.
 * I personaly find the context of this project a bit hard to understand, and quick confusing.
-* 
+* reliability of the informal arrangements made between the parties involved
+* Introducing reputation systems, enabling more informed decisions to be made about reliable and unreliable professionals.
 
 The second option is CommunityFund: Improve Your Community
 Description: CommunityFund
@@ -39,3 +40,4 @@ Pros:
 
 
 Cons:
+* come up with our own way for measuring organizations impact.
