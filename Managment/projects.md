@@ -17,7 +17,10 @@ Main Users are:
 
 Pros: 
 
-Cons: we have to account for more user divercity
+Cons: 
+* we have to account for more user divercity.
+* I personaly find the context of this project a bit hard to understand, and quick confusing.
+* 
 
 The second option is CommunityFund: Improve Your Community
 Description: CommunityFund
@@ -32,6 +35,7 @@ Main Users are:
 * project initiator
 
 Pros: 
+* I find it easier to understand and easier to follow, it makes more sense to me.
 
 
 Cons:
