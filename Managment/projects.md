@@ -17,7 +17,8 @@ Main Users are:
 
 Pros: 
 
-Cons:
+Cons: we have to account for more user divercity
+
 The second option is CommunityFund: Improve Your Community
 Description: CommunityFund
 is a community based crowed funding platform where people would fund community-based
@@ -29,7 +30,8 @@ physical resources.
 Main Users are:
 * funder
 * project initiator
-Pros:
+
+Pros: 
 
 
 Cons:
