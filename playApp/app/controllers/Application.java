@@ -50,7 +50,7 @@ public class Application extends Controller {
 	    }
 	}
 
-	@Security.Authenticated(Secured.class)
+	//@Security.Authenticated(Secured.class)
 	public static Result profileSetUp() {
         return ok(profileSetUp.render()); 
     }

@@ -23,13 +23,13 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#portfolio">Home</a>
+                            <a href="#Home">Home</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">My Profile</a>
+                            <a href="#finishProfile">My Profile</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contact">Logout</a>
+                            <a href="#signout">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -42,6 +42,7 @@
             </div>
             <div class="col-md-2">
                 <img class="img-responsive" src='@routes.Assets.at("bootstrap/img/profile.png")'> <br>
+                <a href="#uploadPic" class="btn btn-primary">Change picture</a>
             </div>
             <div class="container" style="width:500px;">
                 <form class="form-user-info">
@@ -58,17 +59,17 @@
                 </form>
                 <div class="row text-center">
                     <div class="col-md-2">
-                        <a href="#" class="btn btn-primary">More</a><br><br><br>
+                        <a href="#more" class="btn btn-primary">More</a><br><br><br>
                     </div>
                 </div>  
             </div>
         </header>
             <div align="center" class="row">
                 <div class="col-md-6">
-                    <a href="#" class="btn btn-primary" style="font-size: 30px">Create profile</a><br>
+                    <a href="@routes.Application.profile()" class="btn btn-primary" style="font-size: 30px">Create profile</a><br>
                 </div>
                 <div class="col-md-6">
-                    <a href="#" class="btn btn-primary" style="font-size: 30px">Explore communities</a><br>
+                    <a href="@routes.Application.exploreCommunity()" class="btn btn-primary" style="font-size: 30px">Explore communities</a><br>
                 </div>
             </div>  
     </body>
