@@ -24,13 +24,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Home</a>
+                        <a href="@routes.Application.exploreCommunity()">Home</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">My Profile</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Logout</a>
+                        <a href="@routes.Application.signOut()">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
                 <br>
                 <img class="img-responsive" src='@routes.Assets.at("bootstrap/img/profile.png")'>
                 <p>UserName</p>
-                <a href="#" class="btn btn-primary">Edit</a><br>
+                <a href="@routes.Application.setUpProfile()" class="btn btn-primary">Edit</a><br>
             </div>
             <div class="col-lg-6">
                 <h1>My Reputation<h1>
@@ -65,7 +65,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">My Friends</a></p>
+                <p><a class="btn btn-primary" href="@routes.Application.myFriends()" role="button">My Friends</a></p>
                 <ol>
                     <li>Friend</li>
                     <li>Friend2</li>
@@ -73,7 +73,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">My Projects</a></p>
+                <p><a class="btn btn-primary" href="@routes.Application.myCommunities()" role="button">My Communitites</a></p>
                 <ol>
                     <li>CommunityName</li>
                     <li>CommunityName2</li>
@@ -81,7 +81,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-              <p><a class="btn btn-primary" href="#" role="button">My Projects</a></p>
+              <p><a class="btn btn-primary" href="@routes.Application.myProjects()" role="button">My Projects</a></p>
               <ol>
                 <li>Project</li>
                 <li>Project2</li>
@@ -89,7 +89,7 @@
               </ol>
             </div>
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">Projects Funded</a></p>
+                <p><a class="btn btn-primary" href="@routes.Application.fundedProjects()" role="button">Projects Funded</a></p>
                 <ol>
                     <li>Project</li>
                     <li>Project2</li>
@@ -104,15 +104,15 @@
         <hr class="small">
         <div class="row">
             <div class="col-md-4 col-sm-4">
-                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Create Community</a>
+                <a class="btn btn-primary" href="@routes.Application.creatingCommunity()" role="button" style="font-size: 30px">Create Community</a>
             </div>
 
             <div class="col-md-4 col-sm-4">
-                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Create Project</a>
+                <a class="btn btn-primary" href="@routes.Application.projectCreation()" role="button" style="font-size: 30px">Create Project</a>
             </div>
 
             <div class="col-md-4 col-sm-7">
-                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Explore communities</a>
+                <a class="btn btn-primary" href="@routes.Application.exploreCommunity()" role="button" style="font-size: 30px">Explore communities</a>
                 <br><br><br>
             </div>
         </div>

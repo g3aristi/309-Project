@@ -24,13 +24,13 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#portfolio">Home</a>
+                            <a href="@routes.Application.exploreCommunity()">Home</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">My Profile</a>
+                            <a href="@routes.Application.profile()">My Profile</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contact">Logout</a>
+                            <a href="@routes.Application.signOut()">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +86,7 @@
         <!-- Next pages-->
         <div class="col-md-6">
             <br>
-            <p><a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Fund Project</a></p>
+            <p><a class="btn btn-primary" href="@routes.Application.fund()" role="button" style="font-size: 30px">Fund Project</a></p>
         </div>
         <div class="col-md-4">
             <br>

@@ -24,13 +24,13 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#portfolio">Home</a>
+                    <a href="@routes.Application.index()">Home</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about">My Profile</a>
+                    <a href="@routes.Application.profile()">My Profile</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#contact">Logout</a>
+                    <a href="@routes.Application.signOut()">Logout</a>
                 </li>
             </ul>
         </div>
@@ -64,7 +64,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <a class="btn btn-primary" href="#" role="button">otherUserName Friends</a>
+                <a class="btn btn-primary" href="@routes.Application.publicFriend()" role="button">otherUserName Friends</a>
                 <ol>
                     <li>Friend</li>
                     <li>Friend2</li>
@@ -72,7 +72,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-                <a class="btn btn-primary" href="#" role="button">otherUserName Projects</a>
+                <a class="btn btn-primary" href="@routes.Application.publicCommunities()" role="button">otherUserName Communities</a>
                 <ol>
                     <li>CommunityName</li>
                     <li>CommunityName2</li>
@@ -80,7 +80,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-              <a class="btn btn-primary" href="#" role="button">otherUserName Projects</a>
+              <a class="btn btn-primary" href="@routes.Application.publicProjects()" role="button">otherUserName Projects</a>
               <ol>
                 <li>Project</li>
                 <li>Project2</li>
@@ -88,7 +88,7 @@
               </ol>
             </div>
             <div class="col-lg-3">
-                <a class="btn btn-primary" href="#" role="button">otherUserName Funds</a>
+                <a class="btn btn-primary" href="@routes.Application.publicFunded()" role="button">otherUserName Funds</a>
                 <ol>
                     <li>Project</li>
                     <li>Project2</li>

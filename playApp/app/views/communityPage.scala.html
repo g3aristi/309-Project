@@ -23,13 +23,13 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#portfolio">Home</a>
+                            <a href="@routes.Application.exploreCommunity()">Home</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">My Profile</a>
+                            <a href="@routes.Application.profile()">My Profile</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contact">Logout</a>
+                            <a href="@routes.Application.signOut()">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-lg-10">
                 <div class="col-md-6">
-                    <h3><a class="btn btn-primary" href="#" role="button">Community Members</a></h3>
+                    <h3><a class="btn btn-primary" href="@routes.Application.communityMembers()" role="button">Community Members</a></h3>
                     <ol>
                         <li>Member</li>
                         <li>Member2</li>
@@ -58,7 +58,7 @@
                     </ol>
                 </div>
                 <div class="col-md-6">
-                    <h3><a class="btn btn-primary" href="#" role="button">Project in the community</a></h3>
+                    <h3><a class="btn btn-primary" href="@routes.Application.communityProjects()" role="button">Projects in the community</a></h3>
                     <ol>
                         <li>project</li>
                         <li>project2</li>

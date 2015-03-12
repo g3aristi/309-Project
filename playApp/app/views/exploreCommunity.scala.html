@@ -24,13 +24,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Home</a>
+                        <a href="#top">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">My Profile</a>
+                        <a href="@routes.Application.profile()">My Profile</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Logout</a>
+                        <a href="@routes.Application.signOut()">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +83,7 @@
     <div class="row text-center">
         <div class="col-lg-10 col-lg-offset-1">
             <br>
-            <p><a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Create community</a></p>
+            <p><a class="btn btn-primary" href="@routes.Application.creatingCommunity()" role="button" style="font-size: 30px">Create community</a></p>
             <hr class="small">
         </div>
     </div>

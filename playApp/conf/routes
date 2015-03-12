@@ -4,7 +4,30 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-
+GET     /register					controllers.Application.register()
+GET     /signin						controllers.Application.signin()
+POST    /login                      controllers.Application.authenticate()
+GET     /singout					controllers.Application.signOut()
+GET 	/profileSetUp				controllers.Application.setUpProfile()
+GET 	/profile					controllers.Application.profile()
+GET 	/othersProfileView			controllers.Application.othersProfileView()
+GET 	/exploreCommunity 			controllers.Application.exploreCommunity()
+GET 	/creatingCommunity			controllers.Application.creatingCommunity()
+GET 	/communityPage				controllers.Application.communityPage()
+GET 	/projectCreation			controllers.Application.projectCreation()
+GET 	/project					controllers.Application.project()
+GET 	/fund						controllers.Application.fund()
+GET 	/myFriends					controllers.Application.myFriends()
+GET 	/myCommunities				controllers.Application.myCommunities()
+GET 	/myProjects					controllers.Application.myProjects()
+GET 	/fundedProjects				controllers.Application.fundedProjects()
+GET 	/publicFriend				controllers.Application.publicFriend()
+GET 	/publicCommunities			controllers.Application.publicCommunities()
+GET 	/publicProjects				controllers.Application.publicProjects()
+GET 	/publicFunded				controllers.Application.publicFunded()
+GET 	/communityMembers			controllers.Application.communityMembers()
+GET 	/communityProjects			controllers.Application.communityProjects()
+GET 	/inviteFriends				controllers.Application.inviteFriends()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
