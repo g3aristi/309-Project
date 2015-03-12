@@ -12,16 +12,7 @@
     <title>Funding project</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css\bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css\freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="css\font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href='@routes.Assets.at("bootstrap/css/bootstrap.min.css")' rel="stylesheet">
 </head>
 
 <body id="page-top" class="index">
@@ -80,7 +71,7 @@
                 <input type="number" class="form-control" placeholder="security code" required="" min="100" max="9999">
             </div>
             <div class="col-md-2">
-                <img class="img-responsive" src="C:\Users\gilberto\Desktop\uni\3rd_year\csc309\309-Project\playApp\public\bootstrap\img\CC.png" alt="">
+                <img class="img-responsive" src='@routes.Assets.at("bootstrap/img/CC.png")' alt="">
             </div>
         </div>
     </div>
@@ -135,21 +126,11 @@
         </div>
     </div>
 
-    <div align="center" class="col-md-12">
+    <div align="center" class="col-md-11">
         <br><br>
         <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Fund</a>
         <br><br>
     </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
 </body>
 
 </html>

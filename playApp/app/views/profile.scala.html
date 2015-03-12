@@ -12,16 +12,7 @@
     <title>Profile</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css\bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css\freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="css\font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href='@routes.Assets.at("bootstrap/css/bootstrap.min.css")' rel="stylesheet">
 </head>
 
 <body id="page-top" class="index">
@@ -54,7 +45,7 @@
                     <h1>My Profile</h1>
                 </div>
                 <br>
-                <img class="img-responsive" src="C:\Users\gilberto\Desktop\uni\PersonalWork\app\public\bootstrap\img\profile.png" alt="">
+                <img class="img-responsive" src='@routes.Assets.at("bootstrap/img/profile.png")'>
                 <p>UserName</p>
                 <a href="#" class="btn btn-primary">Edit</a><br>
             </div>
@@ -108,43 +99,24 @@
         </div>
     </div>
 
-    <!-- The circle icons use Font Awesome's stacked icon classes. -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-7">
-                            <p><a class="btn btn-primary" href="#" role="button">Create Community</a></p>
-                        </div>
-
-                        <div class="col-md-3 col-sm-10">
-                            <p><a class="btn btn-primary" href="#" role="button">Create Project</a></p>
-                        </div>
-
-                        <div class="col-md-3 col-sm-7">
-                            <p><a class="btn btn-primary" href="#" role="button">Explore communities</a></p>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
+    <!-- footer -->
+    <div class="col-lg-10 col-lg-offset-1">
+        <hr class="small">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Create Community</a>
             </div>
-            <!-- /.row -->
+
+            <div class="col-md-4 col-sm-4">
+                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Create Project</a>
+            </div>
+
+            <div class="col-md-4 col-sm-7">
+                <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Explore communities</a>
+                <br><br><br>
+            </div>
         </div>
-        <!-- /.container -->
-    </section>  
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
+    </div> 
 </body>
 
 </html>

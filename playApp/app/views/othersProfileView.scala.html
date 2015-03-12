@@ -12,37 +12,28 @@
     <title>Other User Profile</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css\bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css\freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="css\font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href='@routes.Assets.at("bootstrap/css/bootstrap.min.css")' rel="stylesheet">
 </head>
 
 <body id="page-top" class="index">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Home</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">My Profile</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Logout</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">Home</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">My Profile</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">Logout</a>
+                </li>
+            </ul>
+        </div>
     </nav><br><br><br>
 
     <!-- Header -->
@@ -54,7 +45,7 @@
                     <h1>otherUserName Profile</h1>
                 </div>
                 <br>
-                <img class="img-responsive" src="C:\Users\gilberto\Desktop\uni\PersonalWork\app\public\bootstrap\img\profile.png" alt="">
+                <img class="img-responsive" src='@routes.Assets.at("bootstrap/img/profile.png")' alt="">
                 <p>otherUserName</p>
             </div>
             <div class="col-lg-6">
@@ -73,7 +64,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">otherUserName Friends</a></p>
+                <a class="btn btn-primary" href="#" role="button">otherUserName Friends</a>
                 <ol>
                     <li>Friend</li>
                     <li>Friend2</li>
@@ -81,7 +72,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">otherUserName Projects</a></p>
+                <a class="btn btn-primary" href="#" role="button">otherUserName Projects</a>
                 <ol>
                     <li>CommunityName</li>
                     <li>CommunityName2</li>
@@ -89,7 +80,7 @@
                 </ol>
             </div>
             <div class="col-lg-3">
-              <p><a class="btn btn-primary" href="#" role="button">otherUserName Projects</a></p>
+              <a class="btn btn-primary" href="#" role="button">otherUserName Projects</a>
               <ol>
                 <li>Project</li>
                 <li>Project2</li>
@@ -97,7 +88,7 @@
               </ol>
             </div>
             <div class="col-lg-3">
-                <p><a class="btn btn-primary" href="#" role="button">otherUserName Funds</a></p>
+                <a class="btn btn-primary" href="#" role="button">otherUserName Funds</a>
                 <ol>
                     <li>Project</li>
                     <li>Project2</li>
@@ -107,28 +98,13 @@
         </div>
     </div>
 
-    <!-- The circle icons use Font Awesome's stacked icon classes. -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <br>
-                    <p><a class="btn btn-primary" href="#" role="button">Rate otherUserName</a></p>
-                    <hr class="small">
-                </div>
-            </div>
+    <div class="row text-center">
+        <div class="col-lg-10 col-lg-offset-1">
+            <br>
+            <a class="btn btn-primary" href="#" role="button" style="font-size: 30px">Rate otherUserName</a>
+            <hr class="small">
         </div>
-    </section>  
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
+    </div> 
 </body>
 
 </html>
