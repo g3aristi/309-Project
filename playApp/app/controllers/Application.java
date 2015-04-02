@@ -16,7 +16,14 @@ public class Application extends Controller {
     }
 
     public static Result register() {
-        return ok(register.render());
+        return ok(register.render()); 
+    }
+
+    public static Result userRegister() {
+        User user = Form.form(User.class).bindFromRequest().get();
+        user.save();
+        return redirect(
+                routes.Application.setUpProfile());
     }
 
     public static Result signin() {
@@ -50,7 +57,6 @@ public class Application extends Controller {
 	    }
 	}
 
-	//@Security.Authenticated(Secured.class)
 	public static Result profileSetUp() {
         return ok(profileSetUp.render()); 
     }

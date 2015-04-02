@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/narimanmammadli/Desktop/CommunityFunding/conf/application.conf,/Users/narimanmammadli/Desktop/CommunityFunding/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/narimanmammadli/Desktop/CommunityFunding/conf/evolutions,/Users/narimanmammadli/Desktop/CommunityFunding/target/scala-2.10/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/narimanmammadli/Desktop/CommunityFunding/conf/routes,/Users/narimanmammadli/Desktop/CommunityFunding/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/narimanmammadli/Desktop/CommunityFunding/conf/evolutions/default,/Users/narimanmammadli/Desktop/CommunityFunding/target/scala-2.10/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/narimanmammadli/Desktop/CommunityFunding/conf/evolutions/default/1.sql,/Users/narimanmammadli/Desktop/CommunityFunding/target/scala-2.10/classes/evolutions/default/1.sql)[0m
