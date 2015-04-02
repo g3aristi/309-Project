@@ -20,6 +20,11 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   #needed for devise authentication
-   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # needed for paperclip
+  Paperclip.options[:command_path] = "C:/Program Files/ImageMagick-6.9.0-Q16"
+  Paperclip.options[:command_path] = "C:/Program Files/ImageMagick-6.9.0-Q16/identify"
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
 
 end

@@ -13,12 +13,13 @@
   <tbody>
     <% @projects.each do |project| %>
       <tr>
+        <td><%= link_to (image_tag project.image.url, class: 'image'), project %></td>
         <td><%= project.title %></td>
         <td><%= project.description %></td>
         <td><%= project.rating %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', class: "btn btn-primary btn-lg", project %></td>
+        <td><%= link_to 'Edit', class: "btn btn-primary btn-lg", edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', class: "btn btn-primary btn-lg", project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'New Project', class: "btn btn-primary btn-lg", new_project_path %>
