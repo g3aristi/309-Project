@@ -1,30 +1,39 @@
-<h1>Listing projects</h1>
+<% if !user_signed_in? %>
+  <div class="jumbotron">
+    <h1>Projects</h1>
+    <p>Here is where community ideas are harvest.</p>
+    <p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+  </div>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Rating</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h1>Projects Listing</h1>
+<div class="row"> 
+  <% @projects.order(created_at: :desc).each do |project| %>
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <% if user_signed_in? %>
+              <%= link_to (image_tag project.image, class: 'image'), project %>
+            <% else %>
+              <%= image_tag project.image, class: 'image' %>
+            <% end %>
+          </div>
+          <div class="col-6 col-md-4">
+            <h1><%= project.title %></h1>
+          </div>
+        </div>
+        <p>Description:</p>
+        <p><%= project.description %></p>
+        <% if user_signed_in? %>
+          <%= link_to 'Check Project', project, class: "btn btn-primary btn-lg" %>
+          <%= link_to 'Delete Project', project, class: "btn btn-primary btn-lg" , method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+        <br><br>
+        <p>Project created: <%= project.created_at %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= link_to (image_tag project.image.url, class: 'image'), project %></td>
-        <td><%= project.title %></td>
-        <td><%= project.description %></td>
-        <td><%= project.rating %></td>
-        <td><%= link_to 'Show', class: "btn btn-primary btn-lg", project %></td>
-        <td><%= link_to 'Edit', class: "btn btn-primary btn-lg", edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', class: "btn btn-primary btn-lg", project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', class: "btn btn-primary btn-lg", new_project_path %>
+<%= link_to 'New Project', new_project_path, class: "btn btn-primary btn-lg" %>
