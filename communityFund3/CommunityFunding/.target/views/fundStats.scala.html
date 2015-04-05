@@ -1,0 +1,97 @@
+
+@(project:Project)
+
+
+@import helper._
+@import helper.twitterBootstrap._
+
+
+ <html>
+  <head>
+    <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    
+    <script>
+    
+    function sortByKey(array, key) {
+	    if(key=="title"){
+	    	
+	    	return array.sort(function(a, b) {
+	            var x = a[key]; var y = b[key];
+	            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+	        });
+	    }
+	     
+	    else{
+	    	
+	    	return array.sort(function(a,b){
+	    		  
+	    		  return new Date(b.date) - new Date(a.date);
+	    		});
+	    }	
+ 
+    }
+    </script>
+    
+    
+    
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+    	// Create the data table.
+          var data = new google.visualization.DataTable();
+          
+          data.addColumn('date', 'Date');
+          data.addColumn('number', 'Total Fund');
+          data.addColumn('number','Target');
+          
+          
+          var dates=[];
+           
+         @for( fund <-  project.whoFundedMe) {
+             var date=new Date(1899+@fund.getDateoffunding.getYear,@fund.getDateoffunding.getMonth,@fund.getDateoffunding.getDate);
+        	
+             dates.push(date); 
+          }
+          
+          dates=sortByKey(dates,"date");
+          var total=0;
+          var target=@project.getTarget;
+          var j=0; 
+          @for( fund <-  project.whoFundedMe) {
+        	  total=total+@fund.getAmount;
+         	  data.addRow([dates[j],total,target]);
+         	  j++;
+           }
+          
+          
+         var options = {
+          title: 'Project Progress',
+         
+          legend: { position: 'bottom' },
+          vAxis: {format:'$###'}
+
+        };
+
+          var formatter = new google.visualization.NumberFormat(
+        	      {prefix: '$', negativeColor: 'red', negativeParens: true});
+        	  formatter.format(data, 1); // Apply formatter to second column
+        	  formatter.format(data,2);
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+          
+          chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>

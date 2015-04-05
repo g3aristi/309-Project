@@ -1,0 +1,82 @@
+@(id:Long)(projectform: play.data.Form[Project])
+@import helper._
+@import helper.twitterBootstrap._
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>new community</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/reset.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/supersized.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+       
+        
+        
+        <div class="page-container">
+        
+        
+        <h1>Create your project</h1>
+            
+        @if(flash.containsKey("error")){
+         <div class="alert alert-error">
+          <span style="color:red">@flash.get("error")</span> </div>   }
+           
+        @helper.form(routes.Application.createProject(id)){
+  
+          <input type="text" required  name="Title"  placeholder="Title" >
+           <input type="text" required  name="target" pattern="\d+" title="Enter numeric value" placeholder="Target amount in $" >
+          <textarea  required  name="Description" placeholder="Description" id="text"></textarea> <br> 
+          <input type='hidden' required id="date" name="postDate" > 
+          <button type="submit" value="submit" onclick="return checkform()">Create</button>
+         }
+       
+        </div>
+        <!-- Javascript -->
+        <script src="@routes.Assets.at("javascripts/jquery-1.8.2.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized.3.2.7.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized-init.js")"></script>
+        <script src="@routes.Assets.at("javascripts/scripts.js")"></script>
+    
+        <script>
+ 
+ 		function checkform(){
+ 
+ 		var d = new Date();
+ 		var curr_date = d.getDate();
+ 		var curr_month = d.getMonth() + 1; //Months are zero based
+ 		var curr_year = d.getFullYear();
+
+	 
+ 		document.getElementById('date').value =curr_year + "-" + curr_month + "-" + curr_date;
+ 		 return true;
+ 			}
+ 	   </script>
+        
+    
+    </body>
+
+</html>
+
+
+
+
+

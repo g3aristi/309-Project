@@ -1,0 +1,59 @@
+@(loginform: play.data.Form[Application.Login])
+@import helper._
+@import helper.twitterBootstrap._
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/reset.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/supersized.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")">
+
+        <!-- Javascript -->
+        <script src="@routes.Assets.at("javascripts/jquery-1.8.2.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized.3.2.7.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized-init.js")"></script>
+        <script src="@routes.Assets.at("javascripts/scripts.js")"></script>
+       
+       
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+            <h1>Login</h1>
+            
+          @if(flash.containsKey("error")){
+         <div class="alert alert-error">
+          <span style="color:red">@flash.get("error")</span> </div>   }   
+         @helper.form(routes.Application.authenticate()) {
+    
+         <input type="email" name="email" placeholder="Email address" class="username" required="" autofocus="" value="@loginform("email").value">
+         <input type="password" pattern=".{7,}" title="Seven or more characters" name="password" class="password"  placeholder="Password" required >
+         <button type="submit">Sign me in</button>
+         <button type="submit" value="Register" onclick="window.location.href='/register'">Register me</button> 
+         }
+         </div>
+       
+
+       
+
+    </body>
+
+</html>
+

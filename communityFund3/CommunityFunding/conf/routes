@@ -1,0 +1,48 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                               controllers.Application.index()
+
+
+GET     /login                          controllers.Application.login()
+POST    /login                          controllers.Application.authenticate()
+GET     /logout 						controllers.Application.logout()
+GET     /user							controllers.Application.userDetail(id:Long)
+
+
+GET     /register                       controllers.Application.register()
+POST    /register					    controllers.Application.createUser()
+
+
+DELETE  /project/:id					controllers.Application.delete(id:Long)
+
+POST    /rateProject					controllers.Application.rateProject(id:Long,vote:Integer)
+POST    /rateUser						controllers.Application.rateUser(id:Long,vote:Integer)
+
+PUT	   /review							controllers.Application.reviewProject(id:Long,content:String)
+
+GET      /newProject				    controllers.Application.newProject(id:Long)
+POST     /newProject				    controllers.Application.createProject(id:Long)
+GET      /project					    controllers.Application.projectDetail(id:Long)
+GET      /fund							controllers.Application.newfund(id:Long)
+POST     /fund							controllers.Application.fund(id:Long)
+
+GET      /newCommunity                  controllers.Application.newCommunity()
+POST     /newCommunity				    controllers.Application.createCommunity()
+GET      /community						controllers.Application.communityDetail(id:Long)
+POST	 /follow						controllers.Application.follow(id:Long)
+
+GET      /picture/:id  		     		controllers.Application.picture(id: Long)
+
+GET      /search						controllers.Application.search(tags:String)
+ 
+GET      /fundStats						controllers.Application.fundStats(id:Long) 
+
+GET     /tagStats						controllers.Application.tagStats()
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

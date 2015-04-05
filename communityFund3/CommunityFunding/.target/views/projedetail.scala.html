@@ -1,0 +1,92 @@
+@(project:Project)
+@import helper._
+@import helper.twitterBootstrap._
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>new project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/reset.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/supersized.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+      <style>
+        a {
+        color:white;
+       }
+       a:link {
+         text-decoration: none;
+        }
+      
+      
+    .starRate {position:relative; margin:20px; overflow:hidden; zoom:1;}
+	.starRate ul {width:160px; margin:0; padding:0;}
+	.starRate li {display:inline; list-style:none;}
+	.starRate a, .starRate b {background:url("@routes.Assets.at("/images/star_64.png")") left top repeat-x;}
+	.starRate a {float:right; margin:0 80px 0 -144px; width:80px; height:16px; background-position:left 16px; color:#000; text-decoration:none;}
+	.starRate a:hover {background-position:left -32px;}
+	.starRate b {position:absolute; z-index:-1; width:80px; height:16px; background-position:left -16px;}
+	.starRate div b {left:0px; bottom:0px; background-position:left top;}
+	.starRate a span {position:absolute; left:-300px;}
+	.starRate a:hover span {left:90px; width:100%;}
+      
+       </style>
+        
+        <div id="menu">
+    
+         <a href="@routes.Application.index()">Home</a>
+         <a href="">About Us</a>
+         <a href="@routes.Application.logout()">Log out</a>
+         <a href="">Contact Us</a>
+    
+        </div>
+        
+        <div class="page-container">
+        
+        <div class="starRate">
+			<div>Currently rated: 3 stars<b></b></div>
+			<ul>
+			<li><a href="#"><span>Give it 5 stars</span></a></li>
+			<li><a href="#"><span>Give it 4 stars</span></a></li>
+			<li><a href="#"><span>Give it 3 stars</span><b></b></a></li>
+			<li><a href="#"><span>Give it 2 stars</span></a></li>
+			<li><a href="#"><span>Give it 1 star</span></a></li>
+			</ul>
+		</div>
+        
+        </div>
+
+        <!-- Javascript -->
+        <script src="@routes.Assets.at("javascripts/jquery-1.8.2.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized.3.2.7.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized-init.js")"></script>
+        <script src="@routes.Assets.at("javascripts/scripts.js")"></script>
+    
+       
+    
+    </body>
+
+</html>
+
+
+
+
+
