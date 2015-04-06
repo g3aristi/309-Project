@@ -1,0 +1,81 @@
+@(communityform: play.data.Form[Community])
+@import helper._
+@import helper.twitterBootstrap._
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>new project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/reset.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/supersized.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <style>
+        a {
+        color:white;
+       }
+        </style>
+        
+        <div id="menu">
+    
+         <a href="@routes.Application.index()">Home</a>
+         <a href="">About Us</a>
+         <a href="@routes.Application.logout()">Log out</a>
+         <a href="">Contact Us</a>
+    
+    </div>
+        
+        <div class="page-container">
+        
+        
+        <h1>Create your community</h1>
+            
+        @if(flash.containsKey("error")){
+         <div class="alert alert-error">
+          <span style="color:red">@flash.get("error")</span> </div>   }
+           
+        @helper.form(routes.Application.createCommunity()){
+  
+          <input type="text" required  name="Title"  placeholder="Title" >
+          <input type="text" required  name="tags" pattern="[a-zA-Z\s]+" title="Space seperated keywords" placeholder="keywords" >
+          <textarea  required  name="Description" placeholder="Description" id="text"></textarea> <br> 
+           
+          <button type="submit" value="submit">Create</button>
+         }
+       
+       </div>
+
+        <!-- Javascript -->
+        <script src="@routes.Assets.at("javascripts/jquery-1.8.2.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized.3.2.7.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/supersized-init.js")"></script>
+        <script src="@routes.Assets.at("javascripts/scripts.js")"></script>
+    
+       
+    
+    </body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,183 @@
+@(user: User)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.musemenu.js", "jquery.watch.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.2.295"/>
+  <title>Home</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/site_global.css?4040146411")"/>
+  <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/index.css?296373057")" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+</script>
+  <!-- JS includes -->
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?4241844378" type="text/javascript"></script>
+  <![endif]-->
+   </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="SlideShowWidget clearfix colelem" id="slideshowu646"><!-- none box -->
+    &nbsp;
+    <div class="popup_anchor" id="u655popup">
+     <div class="SlideShowContentPanel clearfix fullscreen" id="u655"><!-- stack box -->
+      <div class="SSSlide clip_frame fullscreen" id="u658"><!-- image -->
+       <img class="ImageInclude" id="u658_img" data-src="@routes.Assets.at("images/thistle-fin.jpg")" src="@routes.Assets.at("images/blank.gif")" alt="" data-width="1160" data-height="773"/>
+      </div>
+      <div class="SSSlide invi clip_frame fullscreen" id="u660"><!-- image -->
+       <img class="ImageInclude" id="u660_img" data-src="@routes.Assets.at("images/bokeh-dunes.jpg")" src="@routes.Assets.at("images/blank.gif")" alt="" data-width="1160" data-height="773"/>
+      </div>
+      <div class="SSSlide invi clip_frame fullscreen" id="u656"><!-- image -->
+       <img class="ImageInclude" id="u656_img" data-src="@routes.Assets.at("images/wheat-grass-fin.jpg")" src="@routes.Assets.at("images/blank.gif")" alt="" data-width="1160" data-height="773"/>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pmenuu91"><!-- group -->
+    <nav class="MenuBar clearfix grpelem" id="menuu91"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u92"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix colelem" id="u95" href="@routes.Application.index()"><!-- horizontal box --><div class="grpelem" id="u96"><!-- image --></div><div class="MenuItemLabel NoWrap clearfix grpelem" id="u97-4"><!-- content --><p>Home</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u112"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u115" href="about-us.html"><!-- horizontal box --><div class="grpelem" id="u118"><!-- image --></div><div class="MenuItemLabel NoWrap clearfix grpelem" id="u117-4"><!-- content --><p>About us</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u125"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u126" href="contact-us.html"><!-- horizontal box --><div class="grpelem" id="u127"><!-- image --></div><div class="MenuItemLabel NoWrap clearfix grpelem" id="u129-4"><!-- content --><p>Contact us</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u180"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u181" href="@routes.Application.logout()"><!-- horizontal box --><div class="grpelem" id="u184"><!-- image --></div><div class="MenuItemLabel NoWrap clearfix grpelem" id="u182-4"><!-- content --><p>Log out</p></div></a>
+     </div>
+    </nav>
+    <div class="clip_frame grpelem" id="u1086"><!-- image -->
+     <img class="block" id="u1086_img" src="@routes.Assets.at("images/twitter.png")" alt="" width="42" height="42"/>
+    </div>
+    <div class="clip_frame grpelem" id="u1080"><!-- image -->
+     <img class="block" id="u1080_img" src="@routes.Assets.at("images/instagram.png")" alt="" width="42" height="42"/>
+    </div>
+    <div class="clip_frame grpelem" id="u1029"><!-- image -->
+     <img class="block" id="u1029_img" src="@routes.Assets.at("images/fb.png")" alt="" width="42" height="42"/>
+    </div>
+   </div>
+   <div class="PamphletWidget clearfix colelem" id="pamphletu132"><!-- none box -->
+    <div class="popup_anchor" id="u142popup">
+     <div class="ContainerGroup clearfix" id="u142"><!-- stack box -->
+      <div class="Container clearfix grpelem" id="u143"><!-- group -->
+       <div class="clearfix grpelem" id="u144-7"><!-- content -->
+        <p id="u144-3"><span><span class="actAsDiv normal_text" id="u1107"><!-- content --><span class="actAsDiv clip_frame" id="u1108"><!-- image --><img class="block" id="u1108_img" src="@routes.Application.picture(user.id)" alt="" width="129" height="86"/></span></span></span>Welcome <label>@user.getName()</label>     
+        <label>@user.getLastname()</label>
+      </p>
+        <p id="u144-5">Sit amet, consectetur adipiscing elit. Aenean consectetur suscipit viverra. Morbi non arcu blandit justo pellentesque condimentum. Integer dignissim risus quis felis accumsan quis pulvinar tellus fermentum. evcfv dfv dfvfdvdfvdfvdfvdfvdfv</p>
+       </div>
+      </div>
+      <div class="Container invi clearfix grpelem" id="u153"><!-- column -->
+       <div class="clearfix colelem" id="u154-7"><!-- content -->
+        <p id="u154-2"><span>My communities</span></p>
+        <p id="u154-3">&nbsp;</p>
+        <p id="u154-5">@for(community <- user.myCommunities){
+            <a href="@routes.Application.communityDetail(community.id)"><label>@community.getTitle</label></a>
+            <br>
+             }</p>
+       </div>
+       <a href="@routes.Application.newCommunity()">
+       <div class="Button rounded-corners clearfix colelem" id="buttonu1104"><!-- container box -->
+        <div class="clearfix grpelem" id="u1106-4"><!-- content -->
+           Create new
+        </div>
+        <div class="rounded-corners grpelem" id="u1105"><!-- simple frame --></div>
+       </div>
+      </div>
+      </a>
+      <div class="Container invi clearfix grpelem" id="u148"><!-- column -->
+       <div class="clearfix colelem" id="u149-7"><!-- content -->
+        <p id="u149-2"><span id="u149">My projects</span></p>
+        <p id="u149-3">&nbsp;</p>
+        <p id="u149-5">      
+          @for(project <- user.myprojects){
+            <a href="@routes.Application.projectDetail(project.id)"><label>@project.getTitle</label></a>
+            <br>
+            }</p>
+       </div>
+      
+      </div>
+     </div>
+    </div>
+    <div class="ThumbGroup clearfix grpelem" id="u135"><!-- none box -->
+     <div class="popup_anchor">
+      <div class="Thumb popup_element clearfix" id="u140"><!-- group -->
+       <div class="clearfix grpelem" id="u141-4"><!-- content -->
+        <p>&nbsp;My profile</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor">
+      <div class="Thumb popup_element clearfix" id="u136"><!-- group -->
+       <div class="clearfix grpelem" id="u137-4"><!-- content -->
+        <p>My communities</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor">
+      <div class="Thumb popup_element clearfix" id="u138"><!-- group -->
+       <div class="clearfix grpelem" id="u139-4"><!-- content -->
+        <p>My projects</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu1226"><!-- group -->
+    <div class="grpelem" id="u1226"><!-- simple frame --></div>
+    <div class="grpelem" id="u1240"><!-- custom html -->
+     <form action="/search" method="get">
+    <input type="text" style="border-color:red" name="q" placeholder="type here for search" />
+    <input type="submit" value="Search"/>
+</form>
+</div>
+   </div>
+   <div class="verticalspacer"></div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="@routes.Assets.at("javascripts/museutils.js?521960461")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/webpro.js?220831917")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/musewpslideshow.js?224651946")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/musewpslideshow.js?224651946")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/touchswipe.js?325405309")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/jquery.musemenu.js?397543671")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("javascripts/jquery.watch.js?56779320")" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.initWidget('#slideshowu646', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {heroFitting:'fillFrameProportionally',autoPlay:true,displayInterval:4500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:2000,enableSwipe:true,elastic:'fullScreen',resumeAutoplay:false,resumeAutoplayInterval:100,playOnce:false})); });/* #slideshowu646 */
+Muse.Utils.initWidget('.MenuBar', function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#pamphletu132', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'mouseover',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });/* #pamphletu132 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>
