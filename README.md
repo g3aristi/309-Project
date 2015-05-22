@@ -1,4 +1,4 @@
-# 309-Project
+# Community Fund
 
 ##Resources
 * We used this [Play Framework Guide](https://www.playframework.com/documentation/2.1.0/JavaGuide1) to help us set up the Web Application and how to get started.
